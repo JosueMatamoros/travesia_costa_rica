@@ -30,6 +30,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!--Google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2B_jC2G7cc2e7I_kBWHJzpaim72cn3RQ&libraries=places&callback=initMap"></script>
   </head>
   <body>
     <!-- Encabezado-->
@@ -183,8 +185,24 @@
         </button>
       </div>
     </Carousel> -->
+    <!-----------------------Google maps----------------------->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <input type="text" id="ubicacion" placeholder="Enter your location">
+        </div>
+        <div class="col">
+          <input type="text" id="destino" placeholder="Enter your destination">
+        </div>
+      </div>
+      <div id="mapa" style="height: 400px; width: 100%;"></div>
+      <div class="col">
+        <button class="btn btn-primary float-end" id="cotizar-button">Request a price</button>
+    </div>
+    </div>
+    
 
-    <!-- Bootstrap Bundle with Popper -->
+    <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Grid container -->
       <div class="container pt-0">
