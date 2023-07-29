@@ -76,7 +76,7 @@
                   <li><a class="dropdown-item" href="#">Our vehicles</a></li>
                   <li>
                     <a class="dropdown-item" href="#"
-                      >Some Costa Rica attractions</a
+                      >Complementary Services</a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
@@ -278,22 +278,39 @@
     <div class="container-fluid" style="padding-bottom: 60px">
       <div class="row">
         <div class="col">
-          <input type="text" id="ubicacion" placeholder="Enter your location" />
+          <div class="input-group mb-3">
+            <input type="text" id="ubicacion" class="form-control" placeholder="Enter your location" />
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="material-icons">location_on</i> <!-- Icon -->
+              </span>
+            </div>
+          </div>
         </div>
         <div class="col">
-          <input
-            type="text"
-            id="destino"
-            placeholder="Enter your destination"
-          />
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              id="destino"
+              class="form-control"
+              placeholder="Enter your destination"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="material-icons">place</i> <!-- Icono de Material Icons -->
+              </span>
+            </div>
+          </div>
         </div>
+        
       </div>
       <div id="mapa" style="height: 400px; width: 100%"></div>
-      <div class="col">
-        <button class="btn btn-primary float-end" id="cotizar-button">
+      <div class="col mt-3"> 
+        <button class="btn btn-primary  py-2 px-4 float-end" id="cotizar-button">
           Request a price
         </button>
       </div>
+      
     </div>
 
     <!-- Footer -->
