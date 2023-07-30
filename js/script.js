@@ -56,4 +56,16 @@ function initMap() {
   }
   
   document.addEventListener('DOMContentLoaded', initMap);
-  
+
+  function toggleInfo(targetId, buttonId) {
+    var infoDiv = document.getElementById(targetId);
+    var button = document.getElementById(buttonId);
+
+    if (infoDiv.style.display === 'none') {
+      infoDiv.style.display = 'block';
+      button.innerHTML = 'See Less <span class="caret-up"></span>';
+    } else {
+      infoDiv.style.display = 'none';
+      button.innerHTML = 'See More  <span class="caret-down"></span>';
+    }
+  }

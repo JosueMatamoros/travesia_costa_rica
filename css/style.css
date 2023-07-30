@@ -24,8 +24,9 @@ header {
     }
 }
 
+/* Header content */
 .custom-padding {
-    color: white;
+    color: rgb(255, 255, 255);
     padding-bottom: 10px;
     padding-right: 90px;
   }
