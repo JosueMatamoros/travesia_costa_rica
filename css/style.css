@@ -58,5 +58,21 @@ header .navbar{
 /*==================================== Carousel====================================*/
 
 /*==================================== Mapa====================================*/
-
+/* Estilos para el cuadro de información */
+#info {
+    display: none;
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Estilos para los párrafos dentro del cuadro */
+  #info p {
+    margin: 10px 0;
+  }
+  
 /*==================================== Footer====================================*/
