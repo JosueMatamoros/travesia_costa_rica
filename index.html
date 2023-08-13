@@ -25,9 +25,12 @@
     />
     <!-- Google Fonts -->
 
-     <!-- Material Symbols -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
-     
+    <!-- Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    />
+
     <!--Google maps-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2B_jC2G7cc2e7I_kBWHJzpaim72cn3RQ&libraries=places&callback=initMap"></script>
   </head>
@@ -59,10 +62,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contac</a>
+                <a class="nav-link" href="#Footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Transport prices</a>
+                <a class="nav-link" href="#mapa">Transport prices</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -74,9 +77,11 @@
                   >About us</a
                 >
                 <ul class="dropdown-menu custom-dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Our vehicles</a></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#our_fleet">Our vehicles</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#services"
                       >Complementary Services</a
                     >
                   </li>
@@ -126,7 +131,9 @@
     <!-- ==================== Services Label ==================== -->
     <div class="container mt-4">
       <h1 class="text-center">Adapting to Your Needs</h1>
-      <p class="text-center">Uncover Our Comprehensive Array of Customizable Transport Vehicles</p>
+      <p class="text-center">
+        Uncover Our Comprehensive Array of Customizable Transport Vehicles
+      </p>
     </div>
     <!-- ==================== Carousel ==================== -->
     <section>
@@ -218,133 +225,206 @@
     <!-- ==================== Shuttle Label ==================== -->
     <div class="container mt-4">
       <h1 class="text-center">Explore Our Fleet</h1>
-      <p class="text-center">We offer three different shuttle models available for your transportation needs.</p>
-        </div>
-
- <!-- ==================== Shuttle Information ==================== -->
-<h2 class="text-center mb-5">Hyundai-H1 <br> 1-6 passengers</h2>
-<div style="position: relative;">
-  <img src="img/hyundai-h1.png" class="img-fluid" alt="...">
-</div>
-<!-- ==================== Hyundai-H1 Information ==================== -->
-<div class="container mt-5 p-3">
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="text-center mb-3">Hyundai-H1 Information</h3>
       <p class="text-center">
-        Our smallest shuttle is remarkably comfortable and modern. Despite its compact size,
-        it doesn't sacrifice on comfort, making it an ideal choice for small groups or families.
-        With plush seating, ample legroom, and modern amenities, 
-        the Hyundai-H1 ensures a pleasant and enjoyable travel experience for up to 6 passengers.
+        We offer three different shuttle models available for your
+        transportation needs.
       </p>
-      <div id="additional-info-h1" style="display: none; margin-bottom: 5%;">
-        <div class="container mt-4">
-          <h2>Vehicle Features</h2>
-          <ul class="list-group mt-3">
-            <li class="list-group-item">Capacity: 1-6 passengers</li>
-            <li class="list-group-item">Comfortable seats with plush cushions</li>
-            <li class="list-group-item">Ample legroom for a relaxing ride</li>
-            <li class="list-group-item">Modern entertainment system for passenger enjoyment</li>
-            <li class="list-group-item">Air-conditioned interior for a comfortable climate</li>
-            <li class="list-group-item">Wi-Fi connectivity to stay connected on the go</li>
-            <li class="list-group-item">Ample luggage storage for belongings of up to 6 suitcases</li>
-          </ul>
+    </div>
+
+    <!-- ==================== Shuttle Information ==================== -->
+    <h2 class="text-center mb-5">
+      Hyundai-H1 <br />
+      1-6 passengers
+    </h2>
+    <div style="position: relative">
+      <img src="img/hyundai-h1.png" class="img-fluid" alt="..." />
+    </div>
+    <!-- ==================== Hyundai-H1 Information ==================== -->
+    <div class="container mt-5 p-3">
+      <div class="row" id="our_fleet">
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Hyundai-H1 Information</h3>
+          <p class="text-center">
+            Our smallest shuttle is remarkably comfortable and modern. Despite
+            its compact size, it doesn't sacrifice on comfort, making it an
+            ideal choice for small groups or families. With plush seating, ample
+            legroom, and modern amenities, the Hyundai-H1 ensures a pleasant and
+            enjoyable travel experience for up to 6 passengers.
+          </p>
+          <div id="additional-info-h1" style="display: none; margin-bottom: 5%">
+            <div class="container mt-4">
+              <h2>Vehicle Features</h2>
+              <ul class="list-group mt-3">
+                <li class="list-group-item">Capacity: 1-6 passengers</li>
+                <li class="list-group-item">
+                  Comfortable seats with plush cushions
+                </li>
+                <li class="list-group-item">
+                  Ample legroom for a relaxing ride
+                </li>
+                <li class="list-group-item">
+                  Modern entertainment system for passenger enjoyment
+                </li>
+                <li class="list-group-item">
+                  Air-conditioned interior for a comfortable climate
+                </li>
+                <li class="list-group-item">
+                  Wi-Fi connectivity to stay connected on the go
+                </li>
+                <li class="list-group-item">
+                  Ample luggage storage for belongings of up to 6 suitcases
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mb-5">
+            <button
+              id="toggle-button-h1"
+              class="btn btn-sm btn-success"
+              onclick="toggleInfo('additional-info-h1', 'toggle-button-h1')"
+            >
+              See More <span class="caret-down"></span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="text-center mb-5">
-        <button id="toggle-button-h1" class="btn btn-sm btn-success" onclick="toggleInfo('additional-info-h1', 'toggle-button-h1')">
-          See More <span class="caret-down"></span>
-        </button>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- ==================== Toyota Hiace ==================== -->
-<h2 class="text-center mb-4">Toyota Hiace <br> 7-10 passengers</h2>
-<div style="position: relative;">
-  <img src="img/hiace_blanco.png" class="img-fluid" alt="...">
-</div>
-<!-- ==================== Toyota Hiace Information ==================== -->
-<div class="container mt-5 p-3">
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="text-center mb-3">Toyota Hiace Information</h3>
-      <p class="text-center">
-        The Toyota Hiace is a spacious and versatile shuttle designed for 7 to 10 passengers. 
-        The Hiace offers comfortable seats, 
-        ample legroom and modern amenities to ensure a pleasant and convenient journey for all passengers. 
-        Whether it's a short trip within the city or a long-distance adventure, 
-        the Toyota Hiace ensures a smooth and pleasant travel experience for everyone on board.
-      </p>
-      <div id="additional-info-hiace" style="display: none; margin-bottom: 5%;">
-        <div class="container mt-4">
-          <h2>Vehicle Features</h2>
-          <ul class="list-group mt-3">
-            <li class="list-group-item">Capacity: 7-10 passengers</li>
-            <li class="list-group-item">Premium leather seats for a luxurious experience</li>
-            <li class="list-group-item">Extra legroom for added comfort during long trips</li>
-            <li class="list-group-item">Advanced audio system with surround sound</li>
-            <li class="list-group-item">Climate control for individual temperature preferences</li>
-            <li class="list-group-item">Enhanced safety features for a secure journey</li>
-            <li class="list-group-item">Stylish interior design with modern aesthetics</li>
-            <li class="list-group-item">Large panoramic windows for scenic views</li>
-          </ul>
+    <!-- ==================== Toyota Hiace ==================== -->
+    <h2 class="text-center mb-4">
+      Toyota Hiace <br />
+      7-10 passengers
+    </h2>
+    <div style="position: relative">
+      <img src="img/hiace_blanco.png" class="img-fluid" alt="..." />
+    </div>
+    <!-- ==================== Toyota Hiace Information ==================== -->
+    <div class="container mt-5 p-3">
+      <div class="row" id="our_fleet">
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Toyota Hiace Information</h3>
+          <p class="text-center">
+            The Toyota Hiace is a spacious and versatile shuttle designed for 7
+            to 10 passengers. The Hiace offers comfortable seats, ample legroom
+            and modern amenities to ensure a pleasant and convenient journey for
+            all passengers. Whether it's a short trip within the city or a
+            long-distance adventure, the Toyota Hiace ensures a smooth and
+            pleasant travel experience for everyone on board.
+          </p>
+          <div
+            id="additional-info-hiace"
+            style="display: none; margin-bottom: 5%"
+          >
+            <div class="container mt-4">
+              <h2>Vehicle Features</h2>
+              <ul class="list-group mt-3">
+                <li class="list-group-item">Capacity: 7-10 passengers</li>
+                <li class="list-group-item">
+                  Premium leather seats for a luxurious experience
+                </li>
+                <li class="list-group-item">
+                  Extra legroom for added comfort during long trips
+                </li>
+                <li class="list-group-item">
+                  Advanced audio system with surround sound
+                </li>
+                <li class="list-group-item">
+                  Climate control for individual temperature preferences
+                </li>
+                <li class="list-group-item">
+                  Enhanced safety features for a secure journey
+                </li>
+                <li class="list-group-item">
+                  Stylish interior design with modern aesthetics
+                </li>
+                <li class="list-group-item">
+                  Large panoramic windows for scenic views
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mb-5">
+            <button
+              id="toggle-button-hiace"
+              class="btn btn-sm btn-success"
+              onclick="toggleInfo('additional-info-hiace', 'toggle-button-hiace')"
+            >
+              See More<span class="caret-down"></span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="text-center mb-5">
-        <button id="toggle-button-hiace" class="btn btn-sm btn-success" onclick="toggleInfo('additional-info-hiace', 'toggle-button-hiace')">
-          See More<span class="caret-down"></span>
-        </button>
-      </div>
     </div>
-  </div>
-</div>
 
-<!-- ==================== Toyota Coaster ==================== -->
-<h2 class="text-center">Toyota Coaster <br> 11-20 passengers</h2>
-<div style="position: relative;">
-  <img src="img/toyota-coaster.png" class="img-fluid" alt="...">
-</div>
-<!-- ==================== Toyota Coaster Information ==================== -->
-<div class="container mt-5 p-3">
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="text-center mb-3">Toyota Coaster Information</h3>
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget tellus eros. Phasellus venenatis mauris
-        in bibendum consectetur. Suspendisse eu turpis sed quam condimentum hendrerit id et nisi.
-      </p>
-      <div id="additional-info-coaster" style="display: none; margin-bottom: 5%;">
-        <div class="container mt-4">
-          <h2>Vehicle Features</h2>
-          <ul class="list-group mt-3">
-            <li class="list-group-item">Capacity: 11-20 passengers</li>
-            <li class="list-group-item">Spacious and roomy interior for large groups</li>
-            <li class="list-group-item">Reclining seats with adjustable headrests</li>
-            <li class="list-group-item">On-board restroom for convenience during long journeys</li>
-            <li class="list-group-item">High-end sound system with Bluetooth connectivity</li>
-            <li class="list-group-item">Overhead storage compartments for personal belongings</li>
-            <li class="list-group-item">Professional tour guide service for informative trips</li>
-          </ul>
+    <!-- ==================== Toyota Coaster ==================== -->
+    <h2 class="text-center">
+      Toyota Coaster <br />
+      11-20 passengers
+    </h2>
+    <div style="position: relative">
+      <img src="img/toyota-coaster.png" class="img-fluid" alt="..." />
+    </div>
+    <!-- ==================== Toyota Coaster Information ==================== -->
+    <div class="container mt-5 p-3">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Toyota Coaster Information</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            eget tellus eros. Phasellus venenatis mauris in bibendum
+            consectetur. Suspendisse eu turpis sed quam condimentum hendrerit id
+            et nisi.
+          </p>
+          <div
+            id="additional-info-coaster"
+            style="display: none; margin-bottom: 5%"
+          >
+            <div class="container mt-4">
+              <h2>Vehicle Features</h2>
+              <ul class="list-group mt-3">
+                <li class="list-group-item">Capacity: 11-20 passengers</li>
+                <li class="list-group-item">
+                  Spacious and roomy interior for large groups
+                </li>
+                <li class="list-group-item">
+                  Reclining seats with adjustable headrests
+                </li>
+                <li class="list-group-item">
+                  On-board restroom for convenience during long journeys
+                </li>
+                <li class="list-group-item">
+                  High-end sound system with Bluetooth connectivity
+                </li>
+                <li class="list-group-item">
+                  Overhead storage compartments for personal belongings
+                </li>
+                <li class="list-group-item">
+                  Professional tour guide service for informative trips
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mb-4">
+            <button
+              id="toggle-button-coaster"
+              class="btn btn-sm btn-success"
+              onclick="toggleInfo('additional-info-coaster', 'toggle-button-coaster')"
+            >
+              See More <span class="caret-down"></span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="text-center mb-4">
-        <button id="toggle-button-coaster" class="btn btn-sm btn-success" onclick="toggleInfo('additional-info-coaster', 'toggle-button-coaster')">
-          See More <span class="caret-down"></span>
-        </button>
-      </div>
     </div>
-  </div>
-</div>
 
     <!-----------------------Complimentary Services----------------------->
-   <div class="container mt-4">
-    <h1 class="text-center">Complimentary Services</h1>
-    <p class="text-center">
-      All our vehicles are outfitted with an array of exceptional services to enhance your journey
+    <div class="container mt-4" id="services">
+      <h1 class="text-center">Complimentary Services</h1>
+      <p class="text-center">
+        All our vehicles are outfitted with an array of exceptional services to
+        enhance your journey
       </p>
-  </div>
+    </div>
 
     <!-- ==================== Services ==================== -->
     <div class="container mt-5 p-3">
@@ -361,7 +441,7 @@
             <p class="mt-2">Free water bottles for passengers</p>
           </div>
         </div>
-    
+
         <!-- Símbolos "language" y "landscape" en la misma fila para pantallas más grandes -->
         <div class="col-lg-2 col-md-4 d-none d-md-block">
           <div class="card border-gray p-3">
@@ -375,7 +455,7 @@
             <p class="mt-2">Uncover wonders with our tour guidance</p>
           </div>
         </div>
-    
+
         <!-- Nuevas opciones para pantalla grande -->
         <div class="col-lg-2 col-md-4 d-none d-md-block">
           <div class="card border-gray p-3">
@@ -390,10 +470,10 @@
           </div>
         </div>
       </div>
-    
+
       <!-- Espacio vertical entre las filas -->
       <div class="mt-3"></div>
-    
+
       <!-- Símbolos "language" y "landscape" en filas separadas para pantallas pequeñas -->
       <div class="row d-md-none">
         <div class="col-6">
@@ -409,7 +489,7 @@
           </div>
         </div>
       </div>
-    
+
       <!-- Símbolos "lac_unit" y "paid" en filas separadas para pantallas pequeñas -->
       <div class="row d-md-none mt-3">
         <div class="col-6">
@@ -426,21 +506,139 @@
         </div>
       </div>
     </div>
-    
-     <!-- ==================== Map Label ==================== -->
-     <div class="container mt-4 mb-4">
-      <h1 class="text-center">Get Your Personalized <br> Travel Quote</h1>
-    </div>
 
-    <!-----------------------Google maps----------------------->
-    <div class="container-fluid" style="margin-bottom: 20%;">
+    <!-- ==================== Map Label ==================== -->
+    <div class="container mt-4 mb-4">
+      <h1 class="text-center">
+        Get Your Personalized <br />
+        Travel Quote
+      </h1>
+    </div>
+    <!-- ==================== Cards ==================== -->
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 25rem; margin: 10px auto">
+          <img src="img/playa_conchal.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h2 class="card-title">La Fortuna - Tamarindo Beach</h2>
+            <p class="card-text">
+              <span class="fw-bold h5">Hyundai-H1</span> 1-6 passengers
+              <span class="fw-bold">$260</span> <br />
+              <span class="fw-bold h5">Toyota Hiace</span>
+              7-10 passengers <span class="fw-bold">$280</span> <br />
+              <span class="fw-bold h5">Toyota Coaster</span>
+              11-20 passengers <span class="fw-bold">$480</span>
+            </p>
+            <a href="#" class="btn btn-primary">Book Now </a>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------label---------------------------------->
+      <div class="container mt-4 mb-4">
+        <h3 class="text-center">Explore other iconic beaches of Costa Rica</h3>
+        <!------------------------Acordeon with other beaches------------------------>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <span class="fw-bold"> Fortuna - Flamingo Beach</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  <span class="fw-bold h6">Hyundai-H1</span> 1-6 passengers
+                  <span class="fw-bold">$260</span> <br />
+                  <span class="fw-bold h6">Toyota Hiace</span>
+                  7-10 passengers <span class="fw-bold">$280</span> <br />
+                  <span class="fw-bold h6">Toyota Coaster</span>
+                  11-20 passengers <span class="fw-bold">$480</span>
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  <span class="fw-bold"> Fortuna - Tamarindo Beach</span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <span class="fw-bold h6">Hyundai-H1</span> 1-6 passengers
+                    <span class="fw-bold">$260</span> <br />
+                    <span class="fw-bold h6">Toyota Hiace</span>
+                    7-10 passengers <span class="fw-bold">$280</span> <br />
+                    <span class="fw-bold h6">Toyota Coaster</span>
+                    11-20 passengers <span class="fw-bold">$480</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  <span class="fw-bold"> Fortuna - Hermosa Beach</span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <span class="fw-bold h6">Hyundai-H1</span> 1-6 passengers
+                    <span class="fw-bold">$220</span> <br />
+                    <span class="fw-bold h6">Toyota Hiace</span>
+                    7-10 passengers <span class="fw-bold">$240</span> <br />
+                    <span class="fw-bold h6">Toyota Coaster</span>
+                    11-20 passengers <span class="fw-bold">$380
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        <!-----------------------Google maps----------------------->
+        <!--<div class="container-fluid" style="margin-bottom: 20%;">
       <div class="row">
         <div class="col-sm">
           <div class="input-group mb-3">
             <input type="text" id="ubicacion" class="form-control" placeholder="Enter your location" />
             <div class="input-group-append">
               <span class="input-group-text">
-                <i class="material-icons">location_on</i> <!-- Icon -->
+                <i class="material-icons">location_on</i> 
               </span>
             </div>
           </div>
@@ -450,34 +648,69 @@
             <input type="text" id="destino" class="form-control" placeholder="Enter your destination" />
             <div class="input-group-append">
               <span class="input-group-text">
-                <i class="material-icons">place</i> <!-- Icono -->
+                <i class="material-icons">place</i> 
               </span>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="container-fluid mb-3">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Choose your shuttle based on your needs
+          </button>
+          <ul class="dropdown-menu w-100">
+            <li>
+              <a class="dropdown-item" href="#mapa">
+                <span class="d-flex justify-content-between">
+                  <span>Hyundai-H1</span>
+                  <span>1-6 passengers</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#mapa">
+                <span class="d-flex justify-content-between">
+                  <span>Toyota Hiace</span>
+                  <span>7-10 passengers</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#mapa">
+                <span class="d-flex justify-content-between">
+                  <span>Toyota Coaster</span>
+                  <span>11-20 passengers</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+      <div class="container-fluid">
       <div id="mapa" style="height: 400px; width: 100%"></div>
       <div class="col mt-3"> 
-        <button class="btn btn-primary  py-2 px-4 float-end" id="cotizar-button">
+
+       <button class="btn btn-primary  py-2 px-4 float-end" id="cotizar-button">
           Request a price
-        </button>
+        </button> -->
       </div>
     </div>
 
-          
     <div class="container-fluid">
       <!-- Agrega un div donde se mostrará la información -->
-      <div id="info" style="display: none;">
+      <div id="info" style="display: none">
         <h2 class="text-center mb-2">Your personalized travel quote</h2>
         <p id="duration" class="h3"></p>
         <p id="distance" class="h3"></p>
       </div>
     </div>
-    
+
     <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Grid container -->
-      <div class="container pt-0 pb-0">
+      <div class="container pt-0 pb-0" id="Footer">
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
