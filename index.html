@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <!-- Google Fonts -->
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=NOMBRE_DE_LA_FUENTE&display=swap">
     <!-- Material Symbols -->
     <link
       rel="stylesheet"
@@ -42,8 +42,7 @@
       <nav class="navbar navbar-dark navbar-expand-md">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <!--<img src="img/logo_big_screen.png" alt="Logo" width="100" height="100"> -->
-            <span class="text-light fw-bold">Travesia Costa Rica</span>
+            <span class="text-light fw-bold" id="title">Travesia Costa Rica</span>
           </a>
           <button
             class="navbar-toggler text-light"
@@ -80,7 +79,7 @@
                 >
                 <ul class="dropdown-menu custom-dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#our_fleet">Our vehicles</a>
+                    <a class="dropdown-item" href="#ourFleet">Our vehicles</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#services"
@@ -89,7 +88,7 @@
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Cancellation policy</a>
+                    <a class="dropdown-item" href="#">Travel Price List</a>
                   </li>
                 </ul>
               </li>
@@ -97,22 +96,10 @@
           </div>
         </div>
       </nav>
-      <div class="header_tex text-light text-left">
-        <div class="container">
-          <div class="row">
-            <div class="text-start col-sm-12">
-              <h6 class="custom-padding mb-3 text-uppercase">
-                Uncover
-                <span class="gradient-text"
-                  >Costa Rica's Wonders with Premier Transport Services.</span
-                >
-                Your Gateway to Private Transportation Excellence: Reliable,
-                Convenient & Safe!
-              </h6>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- ==================== Logo ==================== -->
+      <div class="m-2 ">
+        <img src="img/logo_big_screen.png" alt="Logo" width="100" height="100"> 
+    </div>
 
       <div
         class="wave"
@@ -243,7 +230,7 @@
     </div>
     <!-- ==================== Hyundai-H1 Information ==================== -->
     <div class="container mt-5 p-3">
-      <div class="row" id="our_fleet">
+      <div class="row" id="ourFleet">
         <div class="col-md-6">
           <h3 class="text-center mb-3">Hyundai-H1 Information</h3>
           <p class="text-center">
@@ -1128,7 +1115,12 @@
       <h6 class="text-center mt-4 text-success mb-4
       ">We Also Offer Trips to Daniel Oduber Quirós International Airport in Liberia  Inquire for Your Price</h6>
     </div>
-
+      <!---------Label---------------->
+    <div class="container mt-4 mb-4">
+      <h1 class="text-center">
+        Get Your Personalized <br> Travel Quote
+      </h1>
+    </div>
     <!-----------------------Google maps----------------------->
     <div class="container-fluid" style="margin-bottom: 20%;">
     <div class="row">
@@ -1223,17 +1215,17 @@
         </form>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
     <!-- Footer -->
     <footer class="text-center text-white custom-footer" style="background-color: #f1f1f1">
       <!-- Grid container -->
       <div class="container pt-0 pb-0" id="Footer">
         <!-- Section: Social media -->
-        <section>
           <!-- Facebook -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
+            href="https://www.facebook.com/profile.php?id=100095546083179&mibextid=ZbWKwL"
             role="button"
             data-mdb-ripple-color="dark"
             ><i class="fab fa-facebook-f"></i
@@ -1256,12 +1248,10 @@
             data-mdb-ripple-color="dark"
             ><i class="fab fa-instagram"></i
           ></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+          <div class="justify-content-center">
+            <img src="img/logo_big_screen.png" alt="Logo" width="100" height="100"> 
+        </div>
+      </div> 
+    </footer>
 </html>
