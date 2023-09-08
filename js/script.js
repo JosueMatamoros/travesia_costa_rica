@@ -113,40 +113,43 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('miFormulario');
   const dropdownButton = document.getElementById('dropdownButton');
-  
+  const fechaHoraInput = document.getElementById('fecha-hora');
+  const alertContainer = document.getElementById('alertContainer');
+
   form.addEventListener('submit', function (event) {
-    const ubicacionCorreo = document.getElementById('UbicacionCorreo').textContent;
-    const destinoCorreo = document.getElementById('DestinoCorreo').textContent;
-    const fechaHora = document.getElementById('fecha-hora').value;
-    const opcionSeleccionada = dropdownButton.textContent.trim(); // Capturar la opción seleccionada
-    
-    const ubicacionInput = document.createElement('input');
-    ubicacionInput.setAttribute('type', 'hidden');
-    ubicacionInput.setAttribute('name', 'ubicacion');
-    ubicacionInput.setAttribute('value', ubicacionCorreo);
-    form.appendChild(ubicacionInput);
+    const fechaHoraValue = fechaHoraInput.value.trim();
+    const dropdownText = dropdownButton.textContent.trim();
 
-    const destinoInput = document.createElement('input');
-    destinoInput.setAttribute('type', 'hidden');
-    destinoInput.setAttribute('name', 'destino');
-    destinoInput.setAttribute('value', destinoCorreo);
-    form.appendChild(destinoInput);
+    if (fechaHoraValue === 'Selecciona fecha y hora' || dropdownText === 'Choose your shuttle based on your needs') {
+      event.preventDefault();
+      alertContainer.style.display = 'block';
+    } else {
+      alertContainer.style.display = 'none'; // Oculta la alerta si los campos están completos
+      
+      const ubicacionCorreo = document.getElementById('UbicacionCorreo').textContent;
+      const destinoCorreo = document.getElementById('DestinoCorreo').textContent;
+      const opcionSeleccionada = dropdownText;
 
-    const fechaHoraInput = document.createElement('input');
-    fechaHoraInput.setAttribute('type', 'hidden');
-    fechaHoraInput.setAttribute('name', 'fecha-hora');
-    fechaHoraInput.setAttribute('value', fechaHora);
-    form.appendChild(fechaHoraInput);
-    
-    const opcionInput = document.createElement('input');
-    opcionInput.setAttribute('type', 'hidden');
-    opcionInput.setAttribute('name', 'opcion-seleccionada'); // Nombre del campo para la opción seleccionada
-    opcionInput.setAttribute('value', opcionSeleccionada);
-    form.appendChild(opcionInput);
+      const ubicacionInput = createHiddenInput('ubicacion', ubicacionCorreo);
+      const destinoInput = createHiddenInput('destino', destinoCorreo);
+      const fechaHoraInputHidden = createHiddenInput('fecha-hora', fechaHoraValue);
+      const opcionInput = createHiddenInput('opcion-seleccionada', opcionSeleccionada);
+
+      form.appendChild(ubicacionInput);
+      form.appendChild(destinoInput);
+      form.appendChild(fechaHoraInputHidden);
+      form.appendChild(opcionInput);
+    }
   });
+
+  function createHiddenInput(name, value) {
+    const input = document.createElement('input');
+    input.setAttribute('type', 'hidden');
+    input.setAttribute('name', name);
+    input.setAttribute('value', value);
+    return input;
+  }
 });
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const dropdownButton = document.getElementById('dropdownButton');
@@ -161,3 +164,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const bookNowAirportButton = document.getElementById('BookNowAirport');
+  bookNowAirportButton.addEventListener('click', function () {
+    const ubicacionInput = document.getElementById('ubicacion');
+    const destinoInput = document.getElementById('destino');
+
+    ubicacionInput.value = "Provincia de Alajuela, La Fortuna, Costa Rica";
+    destinoInput.value = "Aeropuerto Juan Santamaría, Provincia de Alajuela, Río Segundo, Costa Rica";
+  });
+
+  const bookNowFaunaButton = document.getElementById('BookNowFauna');
+  bookNowFaunaButton.addEventListener('click', function () {
+    const ubicacionInput = document.getElementById('ubicacion');
+    const destinoInput = document.getElementById('destino');
+
+    ubicacionInput.value = "Provincia de Alajuela, La Fortuna, Costa Rica";
+    destinoInput.value = "Manuel Antonio, Provincia de Puntarenas, Quepos, Costa Rica";
+  });
+
+  const bookNowBeachesButton = document.getElementById('BookNowBeaches');
+  bookNowBeachesButton.addEventListener('click', function () {
+    const ubicacionInput = document.getElementById('ubicacion');
+    const destinoInput = document.getElementById('destino');
+
+    ubicacionInput.value = "Provincia de Alajuela, La Fortuna, Costa Rica";
+    destinoInput.value = "Playa Conchal, Provincia de Guanacaste, Costa Rica";
+  });
+
+});
+
+
