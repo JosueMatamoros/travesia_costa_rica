@@ -8,20 +8,40 @@
 header {
     width: 100%;
     height: 700px; 
-    background: url(../img/buseta\ portada.png);
+    background: url(../img/imagen_1.jpeg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
+/* Tu archivo de CSS */
+.title{
+    font-family: 'Dancing Script', cursive;
+    /* Otros estilos para el título si es necesario */
+  }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+
+/*====================================logo====================================*/
 /* Mediante media queries, puedes establecer reglas específicas para pantallas pequeñas */
 @media (max-width: 576px) {
     header {
         background-size: cover;
         height: 420px; 
+    }
+    .card {
+        height: 120px; /* Altura de 80px en pantallas pequeñas */
     }
 }
 
@@ -51,11 +71,45 @@ header .navbar{
     transition: all 0.3s ease;
 }
 
-#menu .custom-dropdown-menu a {
-    color: black;
-}
-
 /*==================================== Carousel====================================*/
+.carousel-img {
+    min-height: 430px; 
+    width: auto; /* Permite que el ancho se ajuste automáticamente proporcionalmente */
+  }
+  
+/*==================================== Servicios====================================*/
+/* Estilo para pantallas grandes (más de 992px de ancho) */
+@media (min-width: 992px) {
+    .card {
+      height: 150px; /* Altura de 100px en pantallas grandes */
+    }
+    .custom-footer {
+      width: 100%;
+      margin-bottom: -270px;
+      margin-top: 20%;
+      height: auto;
+    }
+    .carousel-img {
+        max-height: 960px;
+        width: auto; /* Permite que el ancho se ajuste automáticamente proporcionalmente */
+    }
+  }
+  
+
+  /* Estilo para pantallas medianas (entre 768px y 992px de ancho) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .card {
+      height: 120px; /* Altura de 80px en pantallas medianas */
+      margin: 10px;
+    }
+    .custom-footer {
+        width: 100%;
+        margin-bottom: -180px;
+        margin-top: 20%;
+        height: auto;
+    }
+   
+  }
 
 /*==================================== Mapa====================================*/
 /* Estilos para el cuadro de información */
@@ -86,23 +140,14 @@ header .navbar{
 /*==================================== Footer====================================*/
 footer{
     width: 100%;
-    margin-bottom: 0%;
+    margin-bottom: -100px;
     margin-top: 20%;
+    height: auto;
+}
+
+/* Estilos para aumentar el tamaño de los iconos de redes sociales */
+.btn-floating i.fa-lg {
+    font-size: 30px; /* Ajusta el tamaño a tu preferencia */
 }
 
 
-/*==================================== Fonts====================================*/
-body{
-    font-family: 'Roboto', sans-serif;
-
-}
-
-h1{
-    font-family: 'Dancing Script', cursive;
-    
-}
-
-#title{
-    font-family: 'Dancing Script', cursive;
-    
-}
