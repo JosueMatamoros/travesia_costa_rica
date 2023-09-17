@@ -41,9 +41,13 @@ header {
         height: 420px; 
     }
     .card {
-        height: 120px; /* Altura de 80px en pantallas pequeñas */
+        min-height: 180px;
+        margin: 10px;
+      }
     }
-}
+
+    
+
 
 /* Header content */
 .custom-padding {
@@ -73,7 +77,6 @@ header .navbar{
 
 /*==================================== Carousel====================================*/
 .carousel-img {
-    min-height: 430px; 
     width: auto; /* Permite que el ancho se ajuste automáticamente proporcionalmente */
   }
   
