@@ -176,14 +176,14 @@ document.addEventListener('DOMContentLoaded', function () {
     destinoInput.value = "Aeropuerto Juan Santamaría, Provincia de Alajuela, Río Segundo, Costa Rica";
   });
 
-  const bookNowFaunaButton = document.getElementById('BookNowFauna');
-  bookNowFaunaButton.addEventListener('click', function () {
-    const ubicacionInput = document.getElementById('ubicacion');
-    const destinoInput = document.getElementById('destino');
+  //const bookNowFaunaButton = document.getElementById('BookNowFauna');
+  //bookNowFaunaButton.addEventListener('click', function () {
+  // const ubicacionInput = document.getElementById('ubicacion');
+  //const destinoInput = document.getElementById('destino');
 
-    ubicacionInput.value = "Provincia de Alajuela, La Fortuna, Costa Rica";
-    destinoInput.value = "Manuel Antonio, Provincia de Puntarenas, Quepos, Costa Rica";
-  });
+  //ubicacionInput.value = "Provincia de Alajuela, La Fortuna, Costa Rica";
+  //destinoInput.value = "Manuel Antonio, Provincia de Puntarenas, Quepos, Costa Rica";
+
 
   const bookNowBeachesButton = document.getElementById('BookNowBeaches');
   bookNowBeachesButton.addEventListener('click', function () {
